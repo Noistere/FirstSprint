@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46c750bb-a7f8-4e99-8049-95c8dcbf95a7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/First Sprint.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/FirstSprint/Converter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/FirstSprint/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/FirstSprint/StepTracker.java" afterDir="false" />
+    <list default="true" id="46c750bb-a7f8-4e99-8049-95c8dcbf95a7" name="Changes" comment="Реализован ввод шагов и вывод статистики по шагам за месяц. Не получается выдать сообщение об ошибке при вводе некорректного месяца.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +86,14 @@
       <option name="presentableId" value="Default" />
       <updated>1670084460283</updated>
     </task>
+    <task id="LOCAL-00001" summary="Реализован ввод шагов и вывод статистики по шагам за месяц. Не получается выдать сообщение об ошибке при вводе некорректного месяца.">
+      <created>1670972004400</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670972004400</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +106,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Реализован ввод шагов и вывод статистики по шагам за месяц. Не получается выдать сообщение об ошибке при вводе некорректного месяца." />
+    <option name="LAST_COMMIT_MESSAGE" value="Реализован ввод шагов и вывод статистики по шагам за месяц. Не получается выдать сообщение об ошибке при вводе некорректного месяца." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
