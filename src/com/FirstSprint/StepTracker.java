@@ -47,7 +47,7 @@ public class StepTracker {
                 System.out.println(Arrays.toString(array[month-1]));
                 break;
 
-            } else {
+            } else { // Не работает!
                 System.out.println("Ошибка!\nВведен некорректный номер месяца.\n" + "Введите месяц от 1 до 12.\n");
                 return;
             }
