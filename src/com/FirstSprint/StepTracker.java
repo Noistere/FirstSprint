@@ -42,14 +42,14 @@ public class StepTracker {
 //        }
         for (int i = 0; i < array.length; i++) {
 
-            if (i <= 11 || i >= 0) {
+            if (month>=1 && month<=12) {
                 System.out.println("Статистика за: " + (month) + " месяц.");
                 System.out.println(Arrays.toString(array[month-1]));
                 break;
 
-            } else { // Не работает!
+            } else {
                 System.out.println("Ошибка!\nВведен некорректный номер месяца.\n" + "Введите месяц от 1 до 12.\n");
-                return;
+                break;
             }
         }
 
