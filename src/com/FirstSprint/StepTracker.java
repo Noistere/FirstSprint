@@ -12,9 +12,9 @@ public class StepTracker {
 
 
 
-    public void setStepsOnDate (int month, int day, int steps) { // Функция позволяет пользователю ввести месяц, день, шаги
-        array[month - 1][day - 1] = steps;
-           }
+//    public void setStepsOnDate (int month, int day, int steps) { // Функция позволяет пользователю ввести месяц, день, шаги // Теперь не нужна, заменена на функцию isDailyStepsNotNegative
+//        array[month - 1][day - 1] = steps;
+//           }
 
     public void printMonth (int month) { // Функция печатает статистику за определенный месяц
 
@@ -38,12 +38,14 @@ public class StepTracker {
             System.out.println(Arrays.toString(a));
         }
     }
-    public void isDailyStepsNotNegative(int steps) { // Новая функция которая должна заменять отрицательное кол-во шагов на 0.
-        if (steps < 0) {
+    public void isDailyStepsNotNegative(int month, int day, int steps) { // Новая функция которая должна заменять отрицательное кол-во шагов на 0.
+        // Сделал условие ввода шагов такое же как и в функции setStepsOnDate, но, если ввод больше нуля. А если меньше то ввод умножается на ноль.
+        if (steps > 0) {
+            array[month - 1][day - 1] = steps;
             // Здесь нужно реализовать чтобы отрицательное значение заменялось на 0.
-            System.out.println("Введенное значение не должно быть отрицательным");
-        } else {
 
+        } else {
+            array[month - 1][day - 1] = (steps * 0);
         }
     }
 

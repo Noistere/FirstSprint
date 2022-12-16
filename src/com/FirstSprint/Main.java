@@ -36,8 +36,8 @@ public class Main {
                 int day = scanner.nextInt();
                 System.out.print("Введите количество пройденных шагов за " + day + " день месяца: " );
                 int steps = scanner.nextInt();
-                stepTracker.isDailyStepsNotNegative(steps); // Новая функция которая должна заменять отрицательное кол-во шагов на 0.
-                stepTracker.setStepsOnDate(month, day, steps);
+                stepTracker.isDailyStepsNotNegative(month, day, steps); // Новая функция которая должна заменять отрицательное кол-во шагов на 0.
+                //stepTracker.setStepsOnDate(month, day, steps); // Эта функция теперь не нужна! Заменена на isDailyStepsNotNegative!
 
 
 
