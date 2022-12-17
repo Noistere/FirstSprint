@@ -23,7 +23,7 @@ public class Main {
         printMenu(); // Меню для печати
         int userInput = scanner.nextInt();
 
-        while (userInput != 5) {
+        while (userInput != 6) {
 
 
             // Обработка разных случаев
@@ -55,11 +55,27 @@ public class Main {
                 System.out.println("\n Статистика за год: "); // Команды будут позже
                 stepTracker.printArray();
 
+
+
             } else if (userInput == 4) {
-                System.out.println("\n Введите цель по количеству шагов: "); // Команды будут позже
+                System.out.print("Введите номер месяца: ");
+                int month = scanner.nextInt();
+                stepTracker.summOfStepsPerMonth(month);
+
+
+
 
             } else if (userInput == 5) {
+
                 System.out.println("команда 5"); // Команды будут позже
+
+
+
+
+            } else if (userInput == 6) {
+                // Это выход из программы
+
+
 
             } else {
                 System.out.println("\nТакой команды нет. Введите команду от 1 до 5."); // Команды будут позже
@@ -78,8 +94,9 @@ public class Main {
         System.out.println("1) Ввести количество шагов за месяц и за день.");
         System.out.println("2) Напечатать статистику за месяц. ");
         System.out.println("3) Напечатать статистику за год. ");
-        System.out.println("4) Изменить цель по количеству шагов в день.");
-        System.out.println("5) Выйти из приложения");
+        System.out.println("4) Узнать общее количество шагов за месяц.");
+        System.out.println("5) Изменить цель по количеству шагов в день.");
+        System.out.println("6) Выйти из приложения");
         System.out.print("\n Ввведите команду: ");
 
 

@@ -48,8 +48,19 @@ public class StepTracker {
             array[month - 1][day - 1] = (steps * 0);
         }
     }
+    public void summOfStepsPerMonth(int month) { // Функция считает общее количество шагов за выбранный месяц.
+        int sum = 0;
+        for (int i = 0; i < array[month-1].length; i++) {
+            sum += array[month-1][i];
 
-    // Ниже то же самый код что и в printArray но в другом формате
+        }
+        System.out.println(sum);
+
+
+    }
+
+}
+// Ниже то же самый код что и в printArray но в другом формате
 
 //    public void printMonth () {
 //        for (int i = 0; i < array.length; i++) {
@@ -59,10 +70,6 @@ public class StepTracker {
 //
 //
 //        }
-
-
-}
-
 
 
 
