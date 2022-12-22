@@ -23,7 +23,7 @@ public class Main {
         printMenu(); // Меню для печати
         int userInput = scanner.nextInt();
 
-        while (userInput != 6) {
+        while (userInput != 11) {
 
 
             // Обработка разных случаев
@@ -66,16 +66,44 @@ public class Main {
 
 
             } else if (userInput == 5) {
+                System.out.println("\n Стандартная цель по шагам за день = 10000 шагов.");
+                System.out.println("\n Установка цели по шагам:");
+                System.out.println("\n 1 - Январь; 2 - Февраль; 3 - Март; 4 - Апрель; 5 - Май; 6 - Июнь; 7 - Июль; 8 - Август; 9 - Сентябрь; 10 - Октябрь; 11 - Ноябрь; 12 - Декабрь. \n");
+                System.out.print("Введите номер месяца: ");
+                int monthSt = scanner.nextInt();
+                System.out.print("Введите номер дня от 1 до 30: ");
+                int daySt = scanner.nextInt();
+                System.out.print("Введите цель по шагам за " + daySt + " день " + monthSt + "-го месяца: " );
+                int stepsSt = scanner.nextInt();
+                stepTracker.changeTargetOfSteps(stepsSt);
 
-                System.out.println("команда 5"); // Команды будут позже
 
 
 
 
             } else if (userInput == 6) {
+                System.out.println("Команда");
+
+
+            } else if (userInput == 7) {
+                System.out.println("Команда");
+
+
+            } else if (userInput == 8) {
+                System.out.println("Команда");
+
+
+            } else if (userInput == 9) {
+                System.out.println("Команда");
+
+
+            } else if (userInput == 10) {
+                System.out.println("Команда");
+
+
+            } else if (userInput == 11) {
+
                 // Это выход из программы
-
-
 
             } else {
                 System.out.println("\nТакой команды нет. Введите команду от 1 до 5."); // Команды будут позже
@@ -96,7 +124,12 @@ public class Main {
         System.out.println("3) Напечатать статистику за год. ");
         System.out.println("4) Узнать общее количество шагов за месяц.");
         System.out.println("5) Изменить цель по количеству шагов в день.");
-        System.out.println("6) Выйти из приложения");
+        System.out.println("6) Показать максимально пройденное количество шаго в месяце");
+        System.out.println("7) Показать среднее количество шагов в месяце");
+        System.out.println("8) Показать пройденную дистанцию в месяце");
+        System.out.println("9) Узнать количество сожженных килокалорий");
+        System.out.println("10) Показать лучшую серию");
+        System.out.println("11) Выйти из приложения");
         System.out.print("\n Ввведите команду: ");
 
 

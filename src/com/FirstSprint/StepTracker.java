@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class StepTracker {
+    int targetStepsPerDay = 10000;
+
 
     int [][] array = new int[12][30];
 
@@ -58,6 +60,22 @@ public class StepTracker {
 
 
     }
+
+    public void changeTargetOfSteps (int stepsSt) { // функция меняет стандартную цель по шагам по выбранному дню каждого месяца. Но цели по дням никуда не сохраняются, поэтому при вводе цели за новый день, отображается предыдущая цель.
+
+
+        if (stepsSt > targetStepsPerDay) {
+            targetStepsPerDay = stepsSt;
+        } else if (stepsSt < targetStepsPerDay && stepsSt > 0) {
+            targetStepsPerDay = stepsSt;
+        } else if (stepsSt < 0) {
+            System.out.println("\nОшибка! Целевое количество шагов не может быть меньше 0. \nВведите цифру больше 0.\n");
+
+        }
+        System.out.println("Новая цель по шагам за текущий день = " + targetStepsPerDay);
+    }
+
+
 
 }
 // Ниже то же самый код что и в printArray но в другом формате
