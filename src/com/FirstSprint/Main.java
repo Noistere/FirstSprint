@@ -82,11 +82,15 @@ public class Main {
 
 
             } else if (userInput == 6) {
-                System.out.println("Команда");
+                System.out.print("Введите номер месяца: ");
+                int month = scanner.nextInt();
+                stepTracker.maxAmountOfStepsPerMonth(month);
 
 
             } else if (userInput == 7) {
-                System.out.println("Команда");
+                System.out.print("Введите номер месяца: ");
+                int month = scanner.nextInt();
+                stepTracker.findAverage(month);
 
 
             } else if (userInput == 8) {

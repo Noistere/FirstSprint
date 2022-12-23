@@ -23,7 +23,7 @@ public class StepTracker {
         for (int i = 0; i < array.length; i++) {
 
             if (month>=1 && month<=12) {
-                System.out.println("Статистика за " + (month) + " месяц: \n");
+                System.out.println("\nСтатистика за " + (month) + " месяц: \n");
                 System.out.println(Arrays.toString(array[month-1]));
                 break;
 
@@ -73,6 +73,25 @@ public class StepTracker {
 
         }
         System.out.println("Новая цель по шагам за текущий день = " + targetStepsPerDay);
+    }
+
+    public void maxAmountOfStepsPerMonth (int month) { // Функция находит максимальное кличество шагов в выбранном месяце.
+        int maos = 0;
+        for (int i = 0; i < array[month-1].length; i++) {
+            if (array[month-1][i] > maos) {
+                maos = array[month-1][i];
+            }
+
+        }
+        System.out.println("\nМаксимальное количество шагов: " + maos);
+    }
+    public void findAverage (int month) { // Функция считает среднее количество шагов в месяце
+        int sum = 0;
+        for (int i = 0; i < array[month-1].length; i++) {
+            sum += array[month-1][i];
+
+        }
+        System.out.println("\nСреднее количесвто шагов в выбранном месяце: " + (double)sum / array.length);
     }
 
 
