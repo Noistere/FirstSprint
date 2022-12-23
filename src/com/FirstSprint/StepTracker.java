@@ -2,7 +2,7 @@ package com.FirstSprint;
 
 
 import java.util.Arrays;
-import java.util.Scanner;
+
 
 public class StepTracker {
     int targetStepsPerDay = 10000;
@@ -56,7 +56,7 @@ public class StepTracker {
             sum += array[month-1][i];
 
         }
-        System.out.println(sum);
+        System.out.println("\nВ "+ month + "-м месяце вы прошли " + sum + " шагов.");
 
 
     }
@@ -91,7 +91,7 @@ public class StepTracker {
             sum += array[month-1][i];
 
         }
-        System.out.println("\nСреднее количесвто шагов в выбранном месяце: " + (double)sum / array.length);
+        System.out.println("\nСреднее количесвто шагов в выбранном месяце: " + (float)sum / 30);
     }
 
 

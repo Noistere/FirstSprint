@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46c750bb-a7f8-4e99-8049-95c8dcbf95a7" name="Changes" comment="Реализован ввод шагов и вывод статистики по шагам за месяц. Не получается выдать сообщение об ошибке при вводе некорректного месяца.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/FirstSprint/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/FirstSprint/Converter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/FirstSprint/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/FirstSprint/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/FirstSprint/StepTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/FirstSprint/StepTracker.java" afterDir="false" />
     </list>

@@ -19,6 +19,7 @@ public class Main {
 //    4) Выйти из приложения
     public static void main(String[] args) {
         StepTracker stepTracker = new StepTracker(); // Создал объект на основе класса StepTracker
+        Converter converter = new Converter(); // Создал объект на основе класса Converter
         Scanner scanner = new Scanner(System.in);
         printMenu(); // Меню для печати
         int userInput = scanner.nextInt();
@@ -58,7 +59,7 @@ public class Main {
 
 
             } else if (userInput == 4) {
-                System.out.print("Введите номер месяца: ");
+                System.out.print("\nВведите номер месяца: \n");
                 int month = scanner.nextInt();
                 stepTracker.summOfStepsPerMonth(month);
 
@@ -94,11 +95,15 @@ public class Main {
 
 
             } else if (userInput == 8) {
-                System.out.println("Команда");
+                System.out.print("\nВведите количество шагов: ");
+                int steps = scanner.nextInt();
+                converter.convertSteps(steps);
 
 
             } else if (userInput == 9) {
-                System.out.println("Команда");
+                System.out.print("\nВведите количество шагов: ");
+                int steps = scanner.nextInt();
+                converter.convertCalories(steps);
 
 
             } else if (userInput == 10) {
@@ -110,7 +115,7 @@ public class Main {
                 // Это выход из программы
 
             } else {
-                System.out.println("\nТакой команды нет. Введите команду от 1 до 5."); // Команды будут позже
+                System.out.println("\nТакой команды нет. Введите команду от 1 до 11."); // Команды будут позже
 
             }
             printMenu(); // Печатаем меню еще раз перед завершением предыдущего действия
